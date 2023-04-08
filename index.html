@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .button {
+            background-color: var(--button-background-color);
+            border: none;
+            padding: 8px;
+            border-radius: var(--border-radius-md);
+            font-size: var(--button-font-size);
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="button">
+        My button
+    </button>
+
+    <script type="module">
+        import {generateCSS} from './generateCSS.js';
+
+        const style = document.createElement('style');
+        const response = await fetch('./tokens.json')
+        const token = await response.json();
+
+        style.innerHTML = generateCSS(token);
+
+        document.head.append(style);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+    "name": "design-tokens",
+    "type": "module",
+    "version": "0.0.0",
+    "description": "Design tokens",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mfredlundh/design-tokens.git"
+    },
+    "keywords": [
+        "Design",
+        "Tokens"
+    ],
+    "author": "Magnus Fredlundh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mfredlundh/design-tokens/issues"
+    },
+    "homepage": "https://github.com/mfredlundh/design-tokens#readme",
+    "dependencies": {
+        "postcss": "^8.4.21",
+        "vite": "^4.2.1"
+    }
+}
